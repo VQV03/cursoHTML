@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+.grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: [um] 1fr 
+    [dois] 1fr 
+    [tres] 1fr 
+    [quatro]; 
+    /* o fr ( fragmento ) se adequa ao tamanho que sobra da tela, ocupando o restante, caso tenha mais de uma coluna utilizando fr elas irao dividir o espaco igualmente entre si, por exemplo caso eu tenha 3 colunas com 1fr cada, elas terao 33% do view area   */ /* existe a funcao repeat (),onde primeiro vc coloca quantas repeticoes e depois quantos fragmentos em cada repeticao, como por exemplo repeat (10, 1fr), onde se criara 10 colunas com 1 fr cada, existe tambem a funcao repeat (auto-fill) onde ele tentara encaixar automaticamente o numero de colunas e o seu tamanho baseando em especificacoes dadas po minmax ()  */
+    grid-template-rows: 2fr 1 fr; /* esse comando define que por exemplo a linha 1 tenha 2 fr e a linha 2 tenha 1 fr */
+    gap: 30px;
+}
+
+.grid div {
+    background-color: blue;
+    min-height: 100px;  
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.grid div:nth-child(5) {
+    background-color: darkred;
+     /* grid-column-start: um;
+    grid-column-end: quatro; */
+    /* grid-row: span 2; */
+    /* grid-column: span 2; */
+   /* grid-column-start: 2;   
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 6; */
+    /*grid-column: um / quatro;
+    grid-row: um / quatro;*/
+    /*grid-area: um / um / quatro / quatro*/ /* forma de escrita: linha que inicia, coluna que inicia, linha que terminha, coluna que termina */
+}
+
+/* @media (max-width: 768px) {
+    .grid div:nth-child(5) {
+        grid-column: span 1;
+    }
+
+} */

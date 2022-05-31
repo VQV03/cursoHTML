@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        label{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <p>O meu formulario</p>
+        <p>
+            <label>Nome:
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </label>
+        </p> 
+
+        <p> 
+            <label for="dev">Sou um dev1?
+            <input type="checkbox" id="dev1" name="dev1" value="sim" required>
+            </label><br>
+            <label for="dev">Sou um dev2?
+            <input type="checkbox" id="dev2" name="dev2" value="sim" required>
+            </label><br>
+            <label for="dev">Sou um dev3?
+            <input type="checkbox" id="dev3" name="dev3" value="sim" required>
+            </label><br>
+        </p>
+
+        <p> 
+            Genero: <br>
+            <label for="Masculino">Masculino
+            <input type="radio" id="Masculino" name="Genero" value="Masculino" required>
+            </label><br>
+            <label for="Feminino">Feminino
+            <input type="radio" id="Feminino" name="Genero" value="Feminino" required>
+            </label><br>
+            <label for="Nao especificado">Nao especificado
+            <input type="radio" id="Nao especificado" name="Genero" value="Nao especificado" required checked>
+            </label><br>
+        </p>
+
+        <p>
+            <label for="date">Data:
+            <input type="date" id="date" name="date" value="2020-04-20" required>
+            </label>
+        </p> 
+
+        <p>
+            <label for="datetime-local">Data:
+            <input type="datetime-local" id="datetime-local" name="datetime-local" value="2020-04-20T20:00" required>
+            </label>
+        </p> 
+
+        <p>
+            <label for="time">Time:
+            <input type="time" id="time" name="time" value="20:00:01" required>
+            </label>
+        </p> 
+
+        <p>
+            <label for="cor">Cor preferida:
+            <input type="color" id="Cor" name="Cor" value="#ff0000" required>
+            </label>
+        </p> 
+
+        <p>
+            <label for="email">Seu e-mail:
+            <input type="email" id="email" name="email" placeholder="ex.: email@email.com" required>
+            </label>
+        </p> 
+
+        <p>
+            <label for="foto">Sua foto:
+            <input type="file" id="foto" name="foto" required accept=".png">
+            </label>
+        </p> 
+
+        <p>
+            <label for="number">Seu numero:
+            <input type="number" id="number" name="number" placeholder="ex.: +5562999999999" required>
+            </label>
+        </p> 
+
+        <p>
+            <label for="password">Sua senha :
+            <input type="password" id="password" name="password" placeholder="Digite sua senha." required>
+            </label>
+        </p> 
+
+        <p>
+            <label for="range">Range :
+            <input type="range" id="range" name="range" min="0" max="10" step="2" required>
+
+            <datalist id="tickmarks">
+                <option value="1" label="1"></option>
+                <option value="2" label="2"></option>
+                <option value="3" label="3"></option>
+                <option value="4" label="4"></option>
+                <option value="5" label="5"></option>
+                <option value="6" label="6"></option>
+                <option value="7" label="7"></option>
+                <option value="8" label="8"></option>
+                <option value="9" label="9"></option>
+                <option value="10" label="10"></option>
+            </datalist>
+            </label>
+        </p> 
+
+        <p>
+            <label for="url">Seu site:
+            <input type="url" id="url" name="url" placeholder="google.com" required>
+            </label>
+        </p>
+
+        <p>
+            <label for="search">Seu site:
+            <input type="search" id="search" name="search" placeholder="google.com" required>
+            </label>
+        </p>
+
+        <p>
+            <label for="select">Selecione uma opcao:   
+            </label>
+            <select id="select" name="select">
+                <optgroup label="teste">
+                     <option value="qualquer 1" label="l1">Valor</option>
+                     <option value="qualquer 2" label="l2">Valor</option>
+                     <option value="qualquer 3" label="l3">Valor</option>
+                     <option value="qualquer 4" label="l4">Valor</option>  
+                </optgroup> 
+            </select>
+        </p>
+
+        <p>
+            <label for="textarea">Textarea:</label>
+            <textarea name="textarea" id="textarea"></textarea>
+        </p>
+
+        <p>
+            <button type="submit">Reset</button>
+            <button type="submit">Enviar</button>
+        </p>
+    </form>
+</body>
+</html>
